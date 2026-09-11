@@ -1,9 +1,21 @@
-age = int(input("Жашыңызды киргизиңиз: "))
-login = input("Логинди киргизиңиз: ")
-password = input("Паролду киргизиңиз: ")
-student = input("Сиз студентсизби: ")
 
-if (age >= 18 and login == "admin" and password == "12345" )or (age >= 16 and student == "ooba"):
-    print("сизге кирууго уруксат")
+correct_login = "admin"
+correct_password = "12345"
+
+print("=" * 40)
+print("        🔐 СИСТЕМА ВХОДА")
+print("=" * 40)
+
+login = input("Введите логин: ")
+password = input("Введите пароль: ")
+
+if login == correct_login and password == correct_password:
+    print("\n✅ Вход выполнен!")
+    print("Добро пожаловать,", login)
+
+elif login != correct_login:
+    print("\n❌ Неправильный логин!")
+
 else:
-    print("сизге ктрууго уруксат жок")
+    print("\n❌ Неправильный пароль!")
+
