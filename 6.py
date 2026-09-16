@@ -33,19 +33,13 @@ class BankApp:
             bg=self.bg_color
         )
 
-        # Данные клиентов
         self.users = {}
 
-        # Текущий пользователь
         self.current_user = None
 
-        # Запуск стартового окна
         self.start_screen()
 
 
-    # ======================================
-    # ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
-    # ======================================
 
     def clear_window(self):
 
